@@ -1,6 +1,6 @@
 ## 依存ライブラリ
 
-- (twitteroauth)[https://github.com/abraham/twitteroauth] を lib 以下に配置します。
+- [twitteroauth](https://github.com/abraham/twitteroauth) を lib 以下に配置します。
 
 ```
 └── lib
