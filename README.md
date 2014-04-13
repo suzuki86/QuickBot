@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/suzuki86/QuickBot.svg?branch=master)](https://travis-ci.org/suzuki86/QuickBot)
+
 ## 依存ライブラリ
 
 - [twitteroauth](https://github.com/abraham/twitteroauth) をパスが通った位置に配置します。
