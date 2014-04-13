@@ -1,35 +1,16 @@
 <?php
 
-require_once __DIR__ . '/lib/twitteroauth.php';
-
 class QuickBot{
-  private $ck;
-  private $cs;
-  private $at;
-  private $ats;
   private $endpoint;
   private $filename;
   public $twitter;
 
-  public function __construct($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret){
-    /**
-     * Set consumer key, consumer secret,
-     * access token, access token secret.
-     */
-    $this->ck = $consumerKey;
-    $this->cs = $consumerSecret;
-    $this->at = $accessToken;
-    $this->ats = $accessTokenSecret;
+  public function __construct($twitter){
 
     /**
-     * Create and set TwitterOAuth object.
+     * Set twitteroauth object.
      */
-    $this->twitter = new TwitterOAuth(
-      $this->ck,
-      $this->cs,
-      $this->at,
-      $this->ats
-    );
+    $this->twitter = $twitter;
 
     /**
      * Set endpoint for posting tweet.
@@ -41,6 +22,7 @@ class QuickBot{
      */
     $this->filename = 'tweets.txt';
   }
+
 
   /**
    * Load terms from text file.
@@ -67,7 +49,7 @@ class QuickBot{
    */
   public function tweet(){
     $text = $this->selectTerm($this->loadTextFile());
-    $response = $this->twitter->OAuthRequest(
+    $response = $this->twitter->oAuthRequest(
       $this->endpoint,
       'POST',
       array(
