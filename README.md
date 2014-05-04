@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/suzuki86/QuickBot.svg?branch=master)](https://travis-ci.org/suzuki86/QuickBot)
+[![Build Status](https://travis-ci.org/suzuki86/QuickBot.svg?branch=master)](https://travis-ci.org/suzuki86/QuickBot) [![Coverage Status](https://coveralls.io/repos/suzuki86/QuickBot/badge.png?branch=master)](https://coveralls.io/r/suzuki86/QuickBot?branch=master)
 
 ## 依存ライブラリ
 
