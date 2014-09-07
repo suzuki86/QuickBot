@@ -1,16 +1,18 @@
 [![Build Status](https://travis-ci.org/suzuki86/QuickBot.svg?branch=master)](https://travis-ci.org/suzuki86/QuickBot) [![Coverage Status](https://coveralls.io/repos/suzuki86/QuickBot/badge.png?branch=master)](https://coveralls.io/r/suzuki86/QuickBot?branch=master)
 
-## 依存ライブラリ
+## Dependencies
 
-- [twitteroauth](https://github.com/abraham/twitteroauth) をパスが通った位置に配置します。
+- [twitteroauth](https://github.com/abraham/twitteroauth)
 
-## 使いかた
+## Usage
 
-- tweets.txt にツイートを改行区切りで保存します。
-- TwitterOAuth オブジェクトを QuickBot の引数に渡してインスタンスを取得します。
-- tweet メソッドを実行すると tweets.txt の内容をランダムにツイートします。
+- Write text you want to tweet in tweets.txt.
+- Get instance by passing TwitterOAuth object to constructor of QuickBot.
+- Run tweet method, then one of the lines in tweets.txt will be tweeted at random.
 
 ```php
+<?php
+
 require_once 'QuickBot.php';
 require_once 'twitteroauth.php';
 
